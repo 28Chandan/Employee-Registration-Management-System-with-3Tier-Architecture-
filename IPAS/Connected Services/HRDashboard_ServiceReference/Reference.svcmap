@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="653f49d8-0976-4e9f-a570-f027ce368f32" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56045/HRDashboardService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HRDashboardService.xsd" MetadataType="Schema" ID="7577dc37-272a-43cb-a52b-c49930fa672e" SourceId="1" SourceUrl="http://localhost:56045/HRDashboardService.svc?xsd=xsd0" />
+    <MetadataFile FileName="HRDashboardService.disco" MetadataType="Disco" ID="7add4a2f-f609-45c7-bb62-0f35cb89eb21" SourceId="1" SourceUrl="http://localhost:56045/HRDashboardService.svc?disco" />
+    <MetadataFile FileName="HRDashboardService.wsdl" MetadataType="Wsdl" ID="afb6c827-1ef5-4c30-a007-414513cca7f7" SourceId="1" SourceUrl="http://localhost:56045/HRDashboardService.svc?wsdl" />
+    <MetadataFile FileName="HRDashboardService1.xsd" MetadataType="Schema" ID="cfe25027-0dcb-499c-8c8f-0eb0b37b0f9c" SourceId="1" SourceUrl="http://localhost:56045/HRDashboardService.svc?xsd=xsd2" />
+    <MetadataFile FileName="HRDashboardService11.xsd" MetadataType="Schema" ID="d2dd9e5c-7cb5-4d15-b913-d6b70b5c3024" SourceId="1" SourceUrl="http://localhost:56045/HRDashboardService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

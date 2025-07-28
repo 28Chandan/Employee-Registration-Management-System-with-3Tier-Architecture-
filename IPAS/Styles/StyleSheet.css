@@ -1,0 +1,147 @@
+﻿
+#navBar {
+     background-color: gray;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    /* align: all items to the left */
+}
+
+#logoDiv {
+    margin-bottom: 10px;
+}
+
+#vegamLogo {
+    width: 150px;
+}
+
+.navItem:hover {
+    background-color: dimgray;
+    background-color: #374151;
+    color: white;
+    cursor: pointer;
+}
+
+.navItem {
+    font-size: 15px;
+     background-color: aqua;
+    background-color: #14B8A6;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border: 2px solid black;
+    border: 2px solid #0f766e;
+    border-radius: 6px;
+    margin-right: 25px;
+   
+}
+
+.actBtn {
+    background-color: red;
+    background-color: #EF4444;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      border: 2px solid black;
+    border: 2px solid #b91c1c;
+    border-radius: 6px;
+    margin-right: 25px;
+   
+}
+
+#itemDiv {
+    display: flex;
+    
+    }
+
+#footer {
+    background-color: gray;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+#ContentPlaceHolder1 {
+    height: auto;
+}
+
+
+/*new*/
+
+
+/*
+#navBar {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+#logoDiv {
+    margin-bottom: 10px;
+}
+
+#vegamLogo {
+    width: 150px;
+}
+
+.navItem {
+    font-size: 15px;
+    background-color: #374151;
+    color: #f9fafb;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4b5563;
+    border-radius: 6px;
+    margin-right: 25px;
+}
+
+    .navItem:hover {
+        background-color: #4b5563;
+        color: white;
+    }
+
+.actBtn {
+    background-color: #EF4444;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #b91c1c;
+    border-radius: 6px;
+    margin-right: 25px;
+}
+
+#itemDiv {
+    display: flex;
+}
+
+#footer {
+    background-color: #374151;
+    color: #f9fafb;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+#ContentPlaceHolder1 {
+    height: auto;
+}
+*/

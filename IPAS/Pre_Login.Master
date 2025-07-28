@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pre_Login.master.cs" Inherits="IPAS.Pre_Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- jQuery Library (required for AJAX) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <%-- knock out binding --%>
+    <script src='<%= System.Configuration.ConfigurationManager.AppSettings["Knockout"] %>'></script>
+    <title></title>
+
+    <link rel="stylesheet" href="Styles/StyleSheet.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">
+
+    <form id="form1" runat="server">
+
+        <div id="navBar">
+            <div id="logoDiv">
+                <img id="vegamLogo" src="Images/vegam_red.svg" alt="Vegam logo" />
+            </div>
+
+            <div id="itemDiv">
+
+               <%-- <asp:Button ID="homeBtn" CausesValidation="false" class="navItem" runat="server" Text="Home" OnClick="homeBtn_Click" />
+                <asp:Button ID="contactBtn" CausesValidation="false" class="navItem" runat="server" Text="Conatct Us" OnClick="contactBtn_Click" />
+                <asp:Button ID="aboutBtn" CausesValidation="false" class="navItem" runat="server" Text="About" OnClick="aboutBtn_Click" />--%>
+                <button id="homeBtn" type="button" class="navItem" onclick="HomeBtnClick();"><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "HomeBtn") %> </button>
+                <button id="contactBtn" type="button" class="navItem" onclick="ContactBtnClick();"><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "ContactBtn") %> </button>
+                <button id="aboutBtn" type="button" class="navItem" onclick="AboutBtnClick();"><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "AboutBtn") %> </button>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <div id="LogOutDiv" style="margin-left: 1000px">
+                    </div>
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer id="footer">
+            <p><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "CopyRight") %> </p>
+        </footer>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script src='<%= System.Configuration.ConfigurationManager.AppSettings["Pre_Login_Master"] %>Pre_Login_Master.js'></script>
+
+
+     
+</body>
+</html>

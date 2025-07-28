@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35826.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPAS", "IPAS\iPAS.csproj", "{92D1DD6C-023B-4F86-BB5C-2B0C1EBB1B32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPAS_Service", "iPAS_Service\iPAS_Service.csproj", "{1DB61669-F573-4DEC-81DA-2B0A60A3AABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPAS_Service_DAL", "iPAS_Service_DAL\iPAS_Service_DAL.csproj", "{84D5E725-B36E-4D00-A7B4-723BFA404046}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D1DD6C-023B-4F86-BB5C-2B0C1EBB1B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D1DD6C-023B-4F86-BB5C-2B0C1EBB1B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D1DD6C-023B-4F86-BB5C-2B0C1EBB1B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D1DD6C-023B-4F86-BB5C-2B0C1EBB1B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB61669-F573-4DEC-81DA-2B0A60A3AABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB61669-F573-4DEC-81DA-2B0A60A3AABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB61669-F573-4DEC-81DA-2B0A60A3AABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB61669-F573-4DEC-81DA-2B0A60A3AABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D5E725-B36E-4D00-A7B4-723BFA404046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D5E725-B36E-4D00-A7B4-723BFA404046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D5E725-B36E-4D00-A7B4-723BFA404046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D5E725-B36E-4D00-A7B4-723BFA404046}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+		SolutionGuid = {A3269328-C48E-4CC1-8B7B-20C75C16294A}
+	EndGlobalSection
+EndGlobal

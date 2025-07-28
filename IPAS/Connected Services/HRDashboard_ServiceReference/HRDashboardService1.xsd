@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/iPAS_Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/iPAS_Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CountInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcceptedCount" type="xs:int" />
+      <xs:element minOccurs="0" name="DeptCount" type="xs:int" />
+      <xs:element minOccurs="0" name="HRCount" type="xs:int" />
+      <xs:element minOccurs="0" name="PendingCount" type="xs:int" />
+      <xs:element minOccurs="0" name="RejectedCount" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CountInfo" nillable="true" type="tns:CountInfo" />
+  <xs:complexType name="RegistrationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpID" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguagesList" nillable="true" type="tns:ArrayOfLanguageInfo" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OffsetValue" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RejectedReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResumeUpload" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isAccept" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isPending" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isReject" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isTotal" type="xs:boolean" />
+      <xs:element minOccurs="0" name="label" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistrationInfo" nillable="true" type="tns:RegistrationInfo" />
+  <xs:complexType name="ArrayOfLanguageInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LanguageInfo" nillable="true" type="tns:LanguageInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLanguageInfo" nillable="true" type="tns:ArrayOfLanguageInfo" />
+  <xs:complexType name="LanguageInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LangID" type="xs:int" />
+      <xs:element minOccurs="0" name="LangName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LanguageInfo" nillable="true" type="tns:LanguageInfo" />
+  <xs:complexType name="RegistrationInfoClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RegistrationInfoList" nillable="true" type="tns:ArrayOfRegistrationInfo" />
+      <xs:element minOccurs="0" name="isEmpDetailsLoaded" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistrationInfoClass" nillable="true" type="tns:RegistrationInfoClass" />
+  <xs:complexType name="ArrayOfRegistrationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RegistrationInfo" nillable="true" type="tns:RegistrationInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegistrationInfo" nillable="true" type="tns:ArrayOfRegistrationInfo" />
+  <xs:complexType name="DepartmentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeptID" type="xs:int" />
+      <xs:element minOccurs="0" name="DeptName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DepartmentInfo" nillable="true" type="tns:DepartmentInfo" />
+  <xs:complexType name="ErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorInfo" nillable="true" type="tns:ErrorInfo" />
+</xs:schema>

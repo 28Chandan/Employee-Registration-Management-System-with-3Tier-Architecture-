@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Post_Login.master.cs" Inherits="IPAS.Post_Login" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+      <!-- jQuery Library (required for AJAX) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <%-- knock out binding --%>
+    <script src='<%= System.Configuration.ConfigurationManager.AppSettings["Knockout"] %>'></script>
+
+    <title></title>
+    
+    <link rel="stylesheet" href="Styles/StyleSheet.css" />
+</head>
+<body >
+
+
+
+    <form id="form2" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div id="navBar">
+            <div id="logoDiv">
+                <img id="vegamLogo" src="Images/vegam_red.svg" alt="Vegam logo" />
+            </div>
+            
+            <div id="itemDiv">
+
+            
+
+                 <button id="homeBtn" type="button" class="navItem" onclick="HomeBtnClick();"><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "HomeBtn") %> </button>
+                <button id="contactBtn" type="button" class="navItem" onclick="ContactBtnClick();"><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "ContactBtn") %> </button>
+                <button id="aboutBtn" type="button" class="navItem" onclick="AboutBtnClick();"><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "AboutBtn") %> </button>
+
+
+
+
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <div id="LogOutDiv" style="margin-left:1000px">
+              
+                </div>
+            </asp:ContentPlaceHolder>
+                
+            </div>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <footer id="footer">
+            <p><%= GetGlobalResourceObject("Pre_Login_MasterPage_Resource", "CopyRight") %></p>
+        </footer>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <%--<script type="text/javascript">
+    if (window.performance && window.performance.navigation.type === 2) {
+        // This is a back/forward navigation, force reload
+        window.location.reload();
+    }
+    </script>--%>
+    <%--<script defer src="JavaScript/Script.js"></script>--%>
+      <script src='<%= System.Configuration.ConfigurationManager.AppSettings["Pre_Login_Master"] %>Pre_Login_Master.js'></script>
+     
+</body>
+     
+</html>

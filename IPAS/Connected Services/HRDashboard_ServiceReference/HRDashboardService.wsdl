@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HRDashboardService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56045/HRDashboardService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56045/HRDashboardService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56045/HRDashboardService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/iPAS_Service" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHRDashboardService_GetCountInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountInfo" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_GetCountInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_GetEmployeeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeDetails" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_GetEmployeeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_TotDeptCountInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:TotDeptCountInfo" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_TotDeptCountInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TotDeptCountInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_DeleteEmpOrDept_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmpOrDept" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_DeleteEmpOrDept_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmpOrDeptResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_AcceptRejectEmpl_InputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptRejectEmpl" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_AcceptRejectEmpl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptRejectEmplResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_AddNewHR_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewHR" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_AddNewHR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewHRResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_GetALLHRDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetALLHRDetails" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_GetALLHRDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetALLHRDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_DeleteHR_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHR" />
+  </wsdl:message>
+  <wsdl:message name="IHRDashboardService_DeleteHR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHRResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHRDashboardService">
+    <wsdl:operation name="GetCountInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/GetCountInfo" message="tns:IHRDashboardService_GetCountInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/GetCountInfoResponse" message="tns:IHRDashboardService_GetCountInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/GetEmployeeDetails" message="tns:IHRDashboardService_GetEmployeeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/GetEmployeeDetailsResponse" message="tns:IHRDashboardService_GetEmployeeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TotDeptCountInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/TotDeptCountInfo" message="tns:IHRDashboardService_TotDeptCountInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/TotDeptCountInfoResponse" message="tns:IHRDashboardService_TotDeptCountInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmpOrDept">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/DeleteEmpOrDept" message="tns:IHRDashboardService_DeleteEmpOrDept_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/DeleteEmpOrDeptResponse" message="tns:IHRDashboardService_DeleteEmpOrDept_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptRejectEmpl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/AcceptRejectEmpl" message="tns:IHRDashboardService_AcceptRejectEmpl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/AcceptRejectEmplResponse" message="tns:IHRDashboardService_AcceptRejectEmpl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewHR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/AddNewHR" message="tns:IHRDashboardService_AddNewHR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/AddNewHRResponse" message="tns:IHRDashboardService_AddNewHR_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetALLHRDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/GetALLHRDetails" message="tns:IHRDashboardService_GetALLHRDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/GetALLHRDetailsResponse" message="tns:IHRDashboardService_GetALLHRDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHRDashboardService/DeleteHR" message="tns:IHRDashboardService_DeleteHR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHRDashboardService/DeleteHRResponse" message="tns:IHRDashboardService_DeleteHR_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHRDashboardService" type="tns:IHRDashboardService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCountInfo">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/GetCountInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeDetails">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/GetEmployeeDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotDeptCountInfo">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/TotDeptCountInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmpOrDept">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/DeleteEmpOrDept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptRejectEmpl">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/AcceptRejectEmpl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewHR">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/AddNewHR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetALLHRDetails">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/GetALLHRDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHR">
+      <soap:operation soapAction="http://tempuri.org/IHRDashboardService/DeleteHR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HRDashboardService">
+    <wsdl:port name="BasicHttpBinding_IHRDashboardService" binding="tns:BasicHttpBinding_IHRDashboardService">
+      <soap:address location="http://localhost:56045/HRDashboardService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
