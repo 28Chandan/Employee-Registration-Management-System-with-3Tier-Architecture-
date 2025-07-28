@@ -30,11 +30,13 @@ This is a fully functional **Office Registration Management System** developed u
 
 ## 🚀 Tech Stack
 
-- ASP.NET Web Forms
-- WCF Service Layer
-- MySQL 
-- Knockout.js
-- JavaScript, AJAX
+- Frontend: ASP.NET Web Forms, HTML5, CSS3, JavaScript, jQuery, knockout JS
+- Backend: C#, ASP.NET Web Forms, ADO.NET
+- Database: MySQL
+- Web Services: ASMX (for client-side AJAX calls) 
+
+
+
 
 
 ---
