@@ -73,9 +73,9 @@ var EmployeeViewModel2 = {
 function LoadSession() {
     const userRoleSession = sessionStorage.getItem("role");
     console.log("user session recieved", userRoleSession);
-    //if (userRoleSession !=="1") {
-    //    window.location.href = "Login.aspx";
-    //}
+    if (userRoleSession !=="1") {
+        window.location.href = "Login.aspx";
+    }
 }
 function LogOutBtnClick() {
     window.location.href = "Login.aspx";
