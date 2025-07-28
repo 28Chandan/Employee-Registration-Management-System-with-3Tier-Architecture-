@@ -5,7 +5,7 @@ This is a fully functional **Office Registration Management System** developed u
 ---
 
 ## 🧱 Architecture
-
+ 
 - **UI Layer**: ASP.NET Web Forms + Knockout.js (MVVM binding)
 - **Business Logic Layer**: WCF Services using DTOs
 - **Data Access Layer**: MySQL with stored procedures
