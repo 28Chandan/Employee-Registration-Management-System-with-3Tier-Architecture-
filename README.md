@@ -32,9 +32,10 @@ This is a fully functional **Office Registration Management System** developed u
 
 - ASP.NET Web Forms
 - WCF Service Layer
-- MySQL (with Stored Procedures)
+- MySQL 
 - Knockout.js
 - JavaScript, AJAX
+
 
 ---
 
